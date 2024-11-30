@@ -32,5 +32,4 @@ export class CommentsService {
     return { message: 'Comment not found or unauthorized' };
   }
 
-  // يمكنك إضافة وظائف أخرى مثل جلب التعليقات
 }

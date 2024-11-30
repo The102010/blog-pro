@@ -29,5 +29,4 @@ export class ArticlesService {
     return this.articles.find((art) => art.id === id);
   }
 
-  // تحديث وحذف المقالات يمكنك إضافتها هنا
 }
