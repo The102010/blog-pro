@@ -7,7 +7,7 @@ export class GptService {
 
   constructor() {
     this.openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY, // تأكد من وضع مفتاح الـ API هنا
+      apiKey: process.env.OPENAI_API_KEY,
     });
   }
 
@@ -21,7 +21,7 @@ Question: ${question}
 Answer:`;
 
     const response = await this.openai.chat.completions.create({
-      model: 'gpt-4', // استخدم النموذج المطلوب
+      model: 'gpt-4',
       messages: [
         { role: 'system', content: 'You are a helpful assistant.' },
         { role: 'user', content: prompt },
